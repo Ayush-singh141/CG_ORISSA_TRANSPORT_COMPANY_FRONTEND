@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+  # 🚛 C.G. ORISSA TRANSPORT
+  ### Official Client-Side Application
 
-First, run the development server:
+  <p>
+    A high-performance logistics platform bridging Uttar Pradesh, Chhattisgarh, and Odisha.<br>
+    Built with modern web technologies for speed, reliability, and scale.
+  </p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  <a href="https://nextjs.org">
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+  </a>
+  <a href="https://tailwindcss.com">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  </a>
+  <a href="https://www.framer.com/motion/">
+    <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+  </a>
+  <a href="https://www.emailjs.com/">
+    <img src="https://img.shields.io/badge/EmailJS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="EmailJS" />
+  </a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <br />
+  <br />
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  [**Explore the Docs**](https://nextjs.org/docs) · [**Report Bug**](https://github.com/yourusername/repo/issues) · [**Request Feature**](https://github.com/yourusername/repo/issues)
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚡ About The Project
 
-To learn more about Next.js, take a look at the following resources:
+This repository contains the frontend source code for the **C.G. Orissa Transport Co.** official website. The application is designed to serve as the digital storefront for the company's logistics operations, featuring real-time route maps, service catalogs, and instant booking inquiries.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Key Features
+* **🎨 Industrial Aesthetic:** Custom Black, White, and Neon Green (`#39FF14`) design system.
+* **🚀 High Performance:** Server-Side Rendering (SSR) via Next.js for optimal SEO and load speeds.
+* **✨ Interactive UI:** Smooth animations using Framer Motion for a premium user experience.
+* **📨 Serverless Contact:** Integrated EmailJS for handling quotes and inquiries directly from the frontend.
+* **📱 Fully Responsive:** Mobile-first approach for drivers and clients on the go.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is built using the **MERN** ecosystem standards (Frontend focused):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Framework:** [Next.js 14+](https://nextjs.org/) (App Router)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/)
+* **Icons:** [React Icons](https://react-icons.github.io/react-icons/) (FontAwesome 5 / Material)
+* **Email Service:** [EmailJS](https://www.emailjs.com/) (Client-side SMTP)
+
+---
+
+## 🏁 Getting Started
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+* Node.js 18.17 or later
+* npm / yarn / pnpm
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/yourusername/cg-orissa-transport.git](https://github.com/yourusername/cg-orissa-transport.git)
+    cd cg-orissa-transport
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Configure Environment Variables**
+    Create a `.env.local` file in the root directory and add your EmailJS keys:
+    ```env
+    NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+    NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+    NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+    ```
+
+4.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📂 Project Structure
+
+```text
+├── app/                  # Next.js App Router
+│   ├── about/            # About Page
+│   ├── contact/          # Contact Page (Form Logic)
+│   ├── network/          # Network & Routes Page
+│   ├── services/         # Services Page
+│   ├── layout.js         # Root Layout (Navbar/Footer)
+│   └── page.js           # Home Page
+├── components/           # Reusable UI Components
+│   ├── Navbar.js         # Responsive Navigation
+│   └── ...
+├── public/               # Static Assets (Images, Icons)
+├── styles/               # Global Styles
+└── tailwind.config.js    # Design System Config
