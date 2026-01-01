@@ -31,7 +31,7 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
         {/* Padding and Layout */}
-        <div className="w-full md:w-2/3 lg:w-1/2  md:pt-40 pb-10">
+        <div className="w-full md:w-2/3 lg:w-1/2  pt-10 md:pt-40 pb-10">
           <motion.div
             style={{ y: yText, opacity: opacityText }}
             initial={{ opacity: 0, x: -50 }}
