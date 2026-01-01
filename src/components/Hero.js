@@ -22,7 +22,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "/hero_bg.png",
+          backgroundImage: "url('/hero_bg.png')",
         }}
       >
         {/* Light overlay for text readability
