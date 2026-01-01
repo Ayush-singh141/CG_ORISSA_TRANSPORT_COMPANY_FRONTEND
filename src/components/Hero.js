@@ -2,6 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { useRef } from "react";
+
 const Hero = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -21,8 +22,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://i.ibb.co/v6m7JXNV/Gemini-Generated-Image-swhxqsswhxqsswhx-1.jpg')",
+          backgroundImage: "/hero_bg.png",
         }}
       >
         {/* Light overlay for text readability
